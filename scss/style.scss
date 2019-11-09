@@ -1,0 +1,318 @@
+@import "normalize.scss";
+
+$main-color: rgb(255, 191, 0);
+
+// === Mixins ===
+@mixin font-fira {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+// === /Mixins ===
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
+// === header ===
+.section-header {
+  //text-align: center;
+  box-shadow: 0 1px 10px black;
+  font-size: small;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: white;
+
+  &-yellow-strip {
+    height: 16px;
+    width: 100%;
+    background-color: $main-color;
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    #\31 {
+      background-color: $main-color;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    &-tab {
+      font-size: 13px;
+      padding: 20px;
+    }
+  }
+}
+
+// === /header ===
+
+// === about ===
+.section-about {
+  padding-top: 100px;
+  text-align: center;
+
+  .section-about-tabs {
+    .section-about-tabs-border {
+      display: flex;
+      justify-content: center;
+
+      .section-about-tabs-image {
+        margin: 10px;
+        border: solid 16px white;
+
+        img {
+          height: 100px;
+          padding: 15%;
+          opacity: 0.5;
+        }
+
+        .section-about-tabs-title {
+          opacity: 0.5;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+
+      .section-about-tabs-image.active {
+        height: 150px;
+        width: 150px;
+        border: solid 16px $main-color;
+
+        img{
+          height: 100px;
+          padding: 15%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .section-about-text {
+    margin: 0 20% 5%;
+
+    .section-about-text-title {
+      color: $main-color;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: x-large;
+      margin-bottom: 5%;
+    }
+
+    .colored {
+      color: $main-color
+    }
+  }
+
+  .section-about-yellow-strip {
+    height: 16px;
+    background-color: $main-color;
+  }
+}
+
+// === /about ===
+
+// === speakers ===
+.section-speakers {
+  background-color: rgb(236, 236, 236);
+  text-align: center;
+
+  .section-speakers-title {
+    font-size: x-large;
+    font-weight: 700;
+    color: $main-color;
+    padding: 5%;
+  }
+
+  .section-speakers-persons {
+    display: flex;
+    justify-content: center;
+
+    .section-speakers-card {
+      margin: 1%;
+      max-width: 150px;
+
+      .section-speakers-card-img {
+        img {
+          width: 100%;
+          height: 100%;
+          filter: grayscale(100%);
+        }
+      }
+
+      .section-speakers-card-name {
+        background-color: $main-color;
+        margin-top: -5px;
+        padding: 7px 5px 5px;
+
+      }
+
+      .section-speakers-card-function {
+        font-size: small;
+        padding: 5%;
+      }
+
+      .section-speakers-card-site {
+        font-size: small;
+        color: $main-color;
+      }
+    }
+  }
+
+  .section-speakers-buttons {
+    display: flex;
+    justify-content: center;
+
+    .section-speakers-buttons-item {
+      border: solid 2px $main-color;
+      padding: 1%;
+      margin: 5%;
+      width: 40%;
+      max-width: 300px;
+      height: 20px;
+
+      img{
+        height: 10
+        0%;
+      }
+    }
+  }
+}
+
+// === /speakers ===
+
+// === members ===
+.section-members {
+  background-color: $main-color;
+  text-align: center;
+
+  .section-members-title {
+    font-size: large;
+    padding: 5%;
+  }
+
+  .section-members-content {
+    display: flex;
+    justify-content: center;
+
+    .section-members-nominations {
+      width: 25%;
+      min-width: 200px;
+
+      .section-members-nominations-title {
+
+      }
+
+      .section-members-nominations-text {
+        font-size: small;
+        text-align: left;
+        padding: 0 10% 0 0;
+
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+      }
+
+      .section-members-button {
+        color: white;
+        font-weight: bold;
+        border: solid 2px white;
+        padding: 1%;
+        margin: 2%;
+      }
+    }
+
+    .section-members-form {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      min-width: 200px;
+
+      .section-members-form-title {
+        margin-bottom: 5%;
+      }
+
+      .section-members-form-input {
+        margin: 2%;
+
+        input {
+          border: 0;
+          font-size: small;
+          padding: 3%;
+          width: 100%;
+          //padding-right: -10%;
+        }
+      }
+
+      .section-members-form-button {
+        //flex-grow: 1;
+        align-self: flex-end;
+        width: 100%;
+
+        .section-members-button {
+          font-weight: bold;
+          color: white;
+          border: solid 2px white;
+          padding: 1%;
+          margin: 2%;
+          width: 100%;
+          max-width: 300px;
+          align-self: flex-end;
+
+        }
+      }
+
+
+    }
+  }
+
+
+}
+
+// === /members ===
+
+// === contacts ===
+.section-contacts {
+  text-align: center;
+
+  .section-contacts-main {
+    padding: 20px;
+    background-color: black;
+
+    .section-contacts-main-heading {
+      color: $main-color;
+      font-size: x-large;
+      margin: 10px;
+    }
+
+    .section-contacts-main-social {
+      display: flex;
+      justify-content: center;
+
+      .section-contacts-main-social-item {
+        margin: 10px;
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+
+    .section-contacts-main-email {
+      color: white;
+      font-size: small;
+    }
+  }
+
+  .section-contacts-logo {
+    background-color: $main-color;
+    padding: 20px;
+  }
+}
+
+// === /contacts ===
