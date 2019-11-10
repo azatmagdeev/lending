@@ -403,8 +403,6 @@ body {
     flex-wrap: wrap; }
     .section-speakers .section-speakers-buttons .section-speakers-buttons-item {
       border: solid 2px #ffbf00;
-      padding: 1%;
-      margin: 5% 2% 5%;
       width: 40%;
       max-width: 300px;
       min-width: 200px;
@@ -412,7 +410,9 @@ body {
       display: flex;
       justify-content: center;
       color: #ffbf00;
-      font-weight: 700; }
+      font-weight: 700;
+      padding: 1%;
+      margin: 2% 2% 5%; }
       .section-speakers .section-speakers-buttons .section-speakers-buttons-item img {
         height: 80%;
         padding-right: 5%; }
@@ -421,7 +421,8 @@ body {
   background-color: #ffbf00;
   text-align: center; }
   .section-members .section-members-title {
-    font-size: large;
+    font-size: x-large;
+    font-weight: 700;
     padding: 5%; }
   .section-members .section-members-content {
     display: flex;
@@ -429,7 +430,8 @@ body {
     flex-wrap: wrap; }
     .section-members .section-members-content .section-members-nominations {
       width: 25%;
-      min-width: 200px; }
+      min-width: 200px;
+      margin: 0 10px 20px; }
       .section-members .section-members-content .section-members-nominations .section-members-nominations-text {
         font-size: small;
         text-align: left;
@@ -438,16 +440,19 @@ body {
           list-style: none;
           padding: 0; }
       .section-members .section-members-content .section-members-nominations .section-members-button {
+        font-weight: 700;
         color: white;
-        font-weight: bold;
         border: solid 2px white;
-        padding: 1%;
-        margin: 2%; }
+        padding: 2%;
+        margin: 2%;
+        width: 100%;
+        max-width: 300px; }
     .section-members .section-members-content .section-members-form {
       display: flex;
       flex-direction: column;
       width: 25%;
-      min-width: 200px; }
+      min-width: 200px;
+      margin: 0 10px 20px; }
       .section-members .section-members-content .section-members-form .section-members-form-title {
         margin-bottom: 5%; }
       .section-members .section-members-content .section-members-form .section-members-form-form {
@@ -463,10 +468,10 @@ body {
         align-self: flex-end;
         width: 100%; }
         .section-members .section-members-content .section-members-form .section-members-form-button .section-members-button {
-          font-weight: bold;
+          font-weight: 700;
           color: white;
           border: solid 2px white;
-          padding: 1%;
+          padding: 2%;
           margin: 2%;
           width: 100%;
           max-width: 300px; }
