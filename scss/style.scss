@@ -131,6 +131,7 @@ body {
   .section-speakers-persons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     .section-speakers-card {
       margin: 1%;
@@ -166,18 +167,25 @@ body {
   .section-speakers-buttons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     .section-speakers-buttons-item {
       border: solid 2px $main-color;
       padding: 1%;
-      margin: 5%;
+      margin: 5% 2% 5%;
       width: 40%;
       max-width: 300px;
+      min-width: 200px;
       height: 20px;
+      display: flex;
+      justify-content: center;
+      color: $main-color;
+      font-weight: 700;
 
       img{
-        height: 10
-        0%;
+        height: 80%;
+        padding-right: 5%;
+
       }
     }
   }
@@ -198,6 +206,7 @@ body {
   .section-members-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     .section-members-nominations {
       width: 25%;
@@ -237,6 +246,10 @@ body {
         margin-bottom: 5%;
       }
 
+      .section-members-form-form{
+        flex-grow: 1;
+      }
+
       .section-members-form-input {
         margin: 2%;
 
@@ -250,7 +263,7 @@ body {
       }
 
       .section-members-form-button {
-        //flex-grow: 1;
+
         align-self: flex-end;
         width: 100%;
 
@@ -262,7 +275,7 @@ body {
           margin: 2%;
           width: 100%;
           max-width: 300px;
-          align-self: flex-end;
+          //align-self: flex-end;
 
         }
       }

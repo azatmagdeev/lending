@@ -378,7 +378,8 @@ body {
     padding: 5%; }
   .section-speakers .section-speakers-persons {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     .section-speakers .section-speakers-persons .section-speakers-card {
       margin: 1%;
       max-width: 150px; }
@@ -398,16 +399,23 @@ body {
         color: #ffbf00; }
   .section-speakers .section-speakers-buttons {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     .section-speakers .section-speakers-buttons .section-speakers-buttons-item {
       border: solid 2px #ffbf00;
       padding: 1%;
-      margin: 5%;
+      margin: 5% 2% 5%;
       width: 40%;
       max-width: 300px;
-      height: 20px; }
+      min-width: 200px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      color: #ffbf00;
+      font-weight: 700; }
       .section-speakers .section-speakers-buttons .section-speakers-buttons-item img {
-        height: 10 0%; }
+        height: 80%;
+        padding-right: 5%; }
 
 .section-members {
   background-color: #ffbf00;
@@ -417,7 +425,8 @@ body {
     padding: 5%; }
   .section-members .section-members-content {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     .section-members .section-members-content .section-members-nominations {
       width: 25%;
       min-width: 200px; }
@@ -441,6 +450,8 @@ body {
       min-width: 200px; }
       .section-members .section-members-content .section-members-form .section-members-form-title {
         margin-bottom: 5%; }
+      .section-members .section-members-content .section-members-form .section-members-form-form {
+        flex-grow: 1; }
       .section-members .section-members-content .section-members-form .section-members-form-input {
         margin: 2%; }
         .section-members .section-members-content .section-members-form .section-members-form-input input {
@@ -458,8 +469,7 @@ body {
           padding: 1%;
           margin: 2%;
           width: 100%;
-          max-width: 300px;
-          align-self: flex-end; }
+          max-width: 300px; }
 
 .section-contacts {
   text-align: center; }
