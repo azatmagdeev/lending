@@ -327,7 +327,7 @@ body {
       text-transform: uppercase; }
     .section-header-nav-tab {
       font-size: 13px;
-      padding: 1%; }
+      padding: 1% 5% 1%; }
       .section-header-nav-tab a {
         color: black;
         text-decoration: none; }
