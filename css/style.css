@@ -314,20 +314,23 @@ body {
   z-index: 3;
   background-color: white; }
   .section-header-yellow-strip {
-    height: 16px;
+    height: 10px;
     width: 100%;
     background-color: #ffbf00; }
   .section-header-nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
-    .section-header-nav #\31 {
+    .section-header-nav #active {
       background-color: #ffbf00;
       color: white;
       text-transform: uppercase; }
     .section-header-nav-tab {
       font-size: 13px;
-      padding: 20px; }
+      padding: 1%; }
+      .section-header-nav-tab a {
+        color: black;
+        text-decoration: none; }
 
 .section-about {
   padding-top: 100px;
