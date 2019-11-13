@@ -13,7 +13,7 @@ export default function scrollSpy() {
 
     window.addEventListener('scroll', ev => {
         const scrollPosition = document.documentElement.scrollTop;
-        console.log(scrollPosition);
+        // console.log(scrollPosition);
         // console.log(window.innerHeight);
         // console.log(window.outerHeight);
 

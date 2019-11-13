@@ -154,6 +154,7 @@ body {
         background-color: $main-color;
         margin-top: -5px;
         padding: 7px 5px 5px;
+        text-transform: uppercase;
 
       }
 
@@ -186,6 +187,7 @@ body {
       font-weight: 700;
       padding: 1%;
       margin: 2% 2% 5%;
+      cursor: pointer;
 
       img {
         height: 80%;
@@ -242,6 +244,7 @@ body {
         margin: 2%;
         width: 100%;
         max-width: 300px;
+        cursor: pointer;
       }
     }
 
@@ -285,6 +288,7 @@ body {
           margin: 2%;
           width: 100%;
           max-width: 300px;
+          cursor: pointer;
         }
       }
 
