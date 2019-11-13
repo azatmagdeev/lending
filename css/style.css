@@ -374,6 +374,9 @@ body {
 .section-speakers {
   background-color: #ececec;
   text-align: center; }
+  .section-speakers .section-inner {
+    max-width: 600px;
+    margin: 0 auto; }
   .section-speakers .section-speakers-title {
     font-size: x-large;
     font-weight: 700;

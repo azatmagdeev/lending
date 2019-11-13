@@ -1,3 +1,5 @@
+import scrollSpy from "./scrollspy.js";
+
 export async function fetchUp() {
     const response = await fetch('https://api.randomuser.me/?results=3');
     const myJson = await response.json();
@@ -28,6 +30,36 @@ export async function fetchUp() {
             `;
 
         personsEl.appendChild(cardEl);
+    });
+
+    document.querySelector('#more').addEventListener('click', async ()=>{
+        const response = await fetch('https://api.randomuser.me/?results=3');
+        const myJson = await response.json();
+        const persons = myJson.results;
+        persons.map(async person => {
+            const cardEl = document.createElement('div');
+            cardEl.className = 'section-speakers-card';
+            cardEl.innerHTML = `
+        
+                <div class="section-speakers-card-img">
+                    <img src=${person.picture.large} alt="cat">
+                </div>
+                <div class="section-speakers-card-name">
+                    <div>${person.name.first}</div>
+                    <div>${person.name.last}</div>
+                    
+                </div>
+                <div class="section-speakers-card-function">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="section-speakers-card-site">www.yandex.ru</div>
+            `;
+
+            personsEl.appendChild(cardEl);
+
+           await scrollSpy()
+
+        });
     })
 }
 

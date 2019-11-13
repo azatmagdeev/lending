@@ -126,6 +126,11 @@ body {
   background-color: rgb(236, 236, 236);
   text-align: center;
 
+  .section-inner{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   .section-speakers-title {
     font-size: x-large;
     font-weight: 700;
@@ -134,6 +139,7 @@ body {
   }
 
   .section-speakers-persons {
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
