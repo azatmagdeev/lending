@@ -424,6 +424,9 @@ body {
       .section-speakers .section-speakers-buttons .section-speakers-buttons-item img {
         height: 80%;
         padding-right: 5%; }
+      .section-speakers .section-speakers-buttons .section-speakers-buttons-item a {
+        color: #ffbf00;
+        text-decoration: none; }
 
 .section-members {
   background-color: #ffbf00;
